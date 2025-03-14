@@ -1,4 +1,4 @@
--- Library System Management SQL Project
+-- Library Management System SQL Project
 
 -- Insert values into members table
 INSERT INTO members(member_id, member_name, member_address, reg_date) 
