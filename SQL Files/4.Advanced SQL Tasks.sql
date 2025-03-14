@@ -1,4 +1,4 @@
--- SQL Project - Library Management System 
+-- Library Management System SQL Project
 
 /*
 Task 13. 
