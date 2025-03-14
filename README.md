@@ -109,7 +109,7 @@ CREATE TABLE return_status
 ### 2. CRUD Operations
 
 **Task 1: Create a New Book Record**
-- ('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')
+- Objective: Add the new book record ('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')
 
 ```sql
 INSERT INTO books(isbn, book_title, category, rental_price, status, author, publisher)
@@ -157,7 +157,7 @@ HAVING COUNT(*) > 1;
 
 ### 3. CTAS (Create Table As Select)
 
-- **Task 6: Create Summary Tables**
+**Task 6: Create Summary Tables**
 - Objective: Use CTAS to generate new tables based on query results - each book and total 'book_issued_cnt'
 
 ```sql
