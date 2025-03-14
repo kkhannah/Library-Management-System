@@ -117,7 +117,7 @@ VALUES('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Ha
 SELECT * FROM books;
 ```
 **Task 2: Update an Existing Member's Address**
-- Objective: Update the address of member_id -'C103' to '125 Oak St'
+- Objective: Update the address of member_id ='C103' to '125 Oak St' in members table
 ```sql
 UPDATE members
 SET member_address = '125 Oak St'
