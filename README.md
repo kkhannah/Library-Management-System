@@ -109,7 +109,7 @@ CREATE TABLE return_status
 ### 2. CRUD Operations
 
 **Task 1: Create a New Book Record**
--- ('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')
+- ('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')
 
 ```sql
 INSERT INTO books(isbn, book_title, category, rental_price, status, author, publisher)
@@ -125,7 +125,7 @@ WHERE member_id = 'C103';
 ```
 
 **Task 3: Delete a Record from the Issued Status Table**
--- Objective: Delete the record with issued_id = 'IS121' from the issued_status table.
+- Objective: Delete the record with issued_id = 'IS121' from the issued_status table.
 
 ```sql
 DELETE FROM issued_status
@@ -133,7 +133,7 @@ WHERE   issued_id =   'IS121';
 ```
 
 **Task 4: Retrieve All Books Issued by a Specific Employee**
--- Objective: Select all books issued by the employee with emp_id = 'E101'.
+- Objective: Select all books issued by the employee with emp_id = 'E101'.
 ```sql
 SELECT * FROM issued_status
 WHERE issued_emp_id = 'E101'
@@ -141,7 +141,7 @@ WHERE issued_emp_id = 'E101'
 
 
 **Task 5: List Members Who Have Issued More Than One Book**
--- Objective: Use GROUP BY to find members who have issued more than one book.
+- Objective: Use GROUP BY to find members who have issued more than one book.
 
 ```sql
 SELECT 
@@ -157,7 +157,8 @@ HAVING COUNT(*) > 1;
 
 ### 3. CTAS (Create Table As Select)
 
-- **Task 6: Create Summary Tables**: Used CTAS to generate new tables based on query results - each book and total book_issued_cnt**
+- **Task 6: Create Summary Tables**
+- Objective: Use CTAS to generate new tables based on query results - each book and total 'book_issued_cnt'
 
 ```sql
 CREATE TABLE book_cnts
@@ -204,7 +205,6 @@ WHERE reg_date >= CURRENT_DATE - INTERVAL '180 days';
 ```
 
 **Task 10: List Employees with Their Branch Manager's Name and their branch details**:
-
 ```sql
 SELECT 
     e1.emp_id,
@@ -396,7 +396,6 @@ ORDER BY no_book_issued DESC;
 
 
 **Task 18: Stored Procedure**
-Objective:
 Create a stored procedure to manage the status of books in a library system.
 
 Description:
