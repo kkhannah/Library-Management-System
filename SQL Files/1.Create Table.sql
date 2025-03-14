@@ -1,5 +1,7 @@
--- Library System Management SQL Project
--- CREATE DATABASE library;
+-- Library Management System SQL Project
+
+--Database Creation
+CREATE DATABASE library_project;
 
 -- Create table "Branch"
 DROP TABLE IF EXISTS branch;
